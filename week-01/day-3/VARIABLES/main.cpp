@@ -38,7 +38,7 @@ int main (int argc, char* args []) {
 
 
     //Variable Mutation
-    int a = 3;
+    /*int a = 3;
     a += 10;
     std::cout<< a << std::endl;
 
@@ -83,7 +83,31 @@ int main (int argc, char* args []) {
     int j1 = j % 3;
     int j2 = j % 5;
     bool jout = (j1 < 1 || j2 < 1);
-    std::cout<< jout << std::endl;
+    std::cout<< jout << std::endl;*/
+
+
+    //Cuboid
+    /*double a = 5.4;
+    double b = 6.5;
+    double c = 7.6;
+
+    double surface = 2 * (a * b + b * c + c * a);
+    double volume = a * b * c;
+
+    std::cout<< "Surface Area: " << surface << std::endl;
+    std::cout<< "Volume: " << volume << std::endl;*/
+
+
+    //Second In A Day
+    int currentHours = 14;
+    int currentMinutes = 34;
+    int currentSecodns = 43;
+
+    int sumSecondsaDay = 24 * 60 * 60;
+    int SecondsSpent = (currentHours * 60 * 60) + (currentMinutes * 60) + currentSecodns;
+
+    std::cout<< sumSecondsaDay - SecondsSpent << " seconds left from this day." << std::endl;
+
 
 
 
