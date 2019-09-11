@@ -25,8 +25,67 @@ int main (int argc, char* args []) {
     //std::cout<< bmi << std::endl;
 
 
-    //DefineBasicInfo
-    
+    //Define Basic Info
+    //std::string name = "laszlo kiss";
+    //int age = 33;
+    //double height = 1.62;
+    //bool married = true;
+
+    //std::cout<< name << std::endl;
+    //std::cout<< age << std::endl;
+    //std::cout<< height << std::endl;
+    //std::cout<< married << std::endl;
+
+
+    //Variable Mutation
+    int a = 3;
+    a += 10;
+    std::cout<< a << std::endl;
+
+    int b = 100;
+    b -= 7;
+    std::cout<< b << std::endl;
+
+    int c = 44;
+    c *= 2;
+    std::cout<< c << std::endl;
+
+    int d = 125;
+    d /= 5;
+    std::cout<< d << std::endl;
+
+    int e = 8;
+    e = e * e * e;
+    std::cout << e << std::endl;
+
+    int f1 = 123;
+    int f2 = 345;
+    bool f12 = (f1 > f2);
+    std::cout<< f12 << std::endl;
+
+    int g1 = 350;
+    int g2 = 200;
+    bool g12 = ((g2*g2) > g1);
+    std::cout<< g12 << std::endl;
+
+    int h = 13579745;
+    bool b1 = (h % 11 < 1);
+    std::cout<< b1 << std::endl;
+
+    int i1 = 10;
+    int i2 = 3;
+    bool sq = (i1 > (i2*i2));
+    bool cu = (i1 < (i2*i2*i2));
+    std::cout<< sq << std::endl;
+    std::cout<< cu << std::endl;
+
+    int j = 1521;
+    int j1 = j % 3;
+    int j2 = j % 5;
+    bool jout = (j1 < 1 || j2 < 1);
+    std::cout<< jout << std::endl;
+
+
 
 
 
