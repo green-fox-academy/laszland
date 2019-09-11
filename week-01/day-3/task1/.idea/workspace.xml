@@ -11,9 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f752872-878f-4534-9e4f-6c8055faf2de" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../first-task/gitignore.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="0f752872-878f-4534-9e4f-6c8055faf2de" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +70,7 @@
       <updated>1568196558303</updated>
       <workItem from="1568196559398" duration="944000" />
       <workItem from="1568199924964" duration="178000" />
-      <workItem from="1568200125015" duration="313000" />
+      <workItem from="1568200125015" duration="463000" />
     </task>
     <servers />
   </component>
