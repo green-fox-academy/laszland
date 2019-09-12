@@ -35,7 +35,7 @@ int main(int argc, char* args[]) {
 
 
     //Average Of Input
-    /*int num1;
+    int num1;
     int num2;
     int num3;
     int num4;
@@ -56,10 +56,10 @@ int main(int argc, char* args[]) {
     double ave = sum / 5;
 
     std::cout<< "Sum: "<< sum << std::endl;
-    std::cout<< "Average: "<< ave << std:: endl;*/
+    std::cout<< "Average: "<< ave << std:: endl;
 
 
-    
+
 
 
     return 0;
