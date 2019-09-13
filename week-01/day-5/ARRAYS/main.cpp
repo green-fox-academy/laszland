@@ -63,12 +63,11 @@ int main (int argc, char* args []) {
     int j;
     int twoDimension[i][j];
 
-    std::cout << "Type two positive integer: ";
+    std::cout << "Type a positive integer: ";
     std::cin >> i;
-    std::cin >> j;
 
     for (int k = 0; k < i; k++) {
-        for (int l = 0; l < j; l++) {
+        for (int l = 0; l < i; l++) {
             if (l == k) {
                 std::cout << "1";
             } else {
