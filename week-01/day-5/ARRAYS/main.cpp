@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <numeric>
 
 int main (int argc, char* args []) {
 
@@ -59,7 +60,7 @@ int main (int argc, char* args []) {
 
 
     //DIAGONAL MATRIX
-    int i;
+    /*int i;
     int j;
     int twoDimension[i][j];
 
@@ -74,9 +75,78 @@ int main (int argc, char* args []) {
                 std::cout << "0";
             }
         } std::cout <<std::endl;
+    }*/
+
+
+    //DOUBLE ITEMS
+    /*int numList[] = {3, 4, 5, 6, 7};
+
+    for (int i = 0; i < 5; ++i) {
+        numList[i] = numList[i] * 2;
+        std::cout<< numList[i] <<std::endl;
+    }*/
+
+
+    //COLORS
+    /*std::string shadesOfCOlors [3][5] = {
+            {"lime ", "forest green ", "olive ", "pale green ", "spring green"},
+            {"orange red ", "red ", "tomato "},
+            {"orchid ", "violet ", "pink ", "hot pink "}
+    };
+
+    for (int i = 0 ; i < 3; ++i) {
+        for (int j = 0; j < 5; ++j) {
+            std::cout<< shadesOfCOlors[i][j];
+        } std::cout << std::endl;
+    }*/
+
+
+    //APPEND A
+    /*std::string animals[] = {"koal", "pand", "zebr"};
+
+    for (int i = 0; i < 3; ++i) {
+        animals[i] = animals[i] + "a";
+        std::cout<< animals[i] <<std::endl;
+    }*/
+
+
+    //SWAP
+    /*std::string abc[] = {"first", "second", "third"};
+    std::swap(abc[0], abc[2]);
+
+    for (int i = 0; i < 3; ++i) {
+        std::cout<< abc[i] <<std::endl;
+    }*/
+
+
+    //SUM ALL
+    /*int ai[] = {3, 9, 5, 10, 17};
+    int sum = 0;
+
+   for (int i = 0; i < 5; i++) {
+       sum = sum + ai[i];
+   }
+   std::cout << sum << std::endl;
+
+   int sum2 = std::accumulate(std::begin(ai), std::end(ai), 0);
+   std::cout << sum2 <<std::endl;*/
+
+
+    //REVERSE
+    int aj[] = {3, 4, 5, 6, 7};
+    int lastIndexOfArray = 4;
+
+    for (int i = 0; i <= lastIndexOfArray; ++i) {
+        if (i <= 2) {
+            std::swap(aj[i], aj[lastIndexOfArray - i]);
+            std::cout << aj[i] << std::endl;
+        } else {
+            std::cout << aj[i] <<std::endl;
+        }
     }
 
 
-
     return 0;
+
+
 }
