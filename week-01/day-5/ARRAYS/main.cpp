@@ -137,7 +137,7 @@ int main (int argc, char* args []) {
     int lastIndexOfArray = 4;
 
     for (int i = 0; i <= lastIndexOfArray; ++i) {
-        if (i <= 2) {
+        if (i < 2) {
             std::swap(aj[i], aj[lastIndexOfArray - i]);
             std::cout << aj[i] << std::endl;
         } else {
