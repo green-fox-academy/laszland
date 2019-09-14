@@ -27,7 +27,7 @@ int main(int argc, char* atgs []) {
 
     //GUESS THE NUMBER
 
-    std::srand(time(NULL));
+    /*std::srand(time(NULL));
     int randomNumber = rand() % 100+1;
     int userGuess;
 
@@ -45,6 +45,25 @@ int main(int argc, char* atgs []) {
         } else if (userGuess < randomNumber) {
             std::cout<<"The number is bigger." << std::endl;
             goto guess;
+    }*/
+
+
+    //DRAW CHESS TABLE
+    for (int i = 0; i < 10; i++) {
+        for (int j = 0; j < 10; j++) {
+            if (i % 2 == 0) {
+                if (j % 2 == 0) {
+                    std::cout<<"@";
+                } else std::cout<< " ";
+            } else if (i % 2 == 1) {
+                if (j % 2 == 0) {
+                    std::cout<<" ";
+                } else {
+                    std::cout<<"@";
+                }
+            }
+        }
+        std::cout << std::endl;
     }
 
     return 0;
