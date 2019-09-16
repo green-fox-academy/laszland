@@ -73,7 +73,7 @@ int main() {
 
 
     // LIST INTRODUCTION2
-    std::vector<std::string> ListA = {"Apple", "Avocado", "Blueberry", "Durian", "Lychee"};
+    /*std::vector<std::string> ListA = {"Apple", "Avocado", "Blueberry", "Durian", "Lychee"};
     std::vector<std::string> ListB;
 
     for (int i = 0; i < ListA.size(); i++) {
@@ -112,11 +112,49 @@ int main() {
         }
     }
 
-    ListB.insert(ListB.end(), "Passion Fruit", "Pomelo");
-    
+    std::string extraFruits = {"Passion Fruit", "Pomelo"};
+    ListB.push_back(extraFruits);
+
+    for (int i = 0; i < ListB.size(); i++) {
+        std::cout << ListB[i] << ", ";
+    }
+    std::cout << std::endl;
+
+    std::cout << ListA[2] << std::endl;*/
 
 
+    // MAP INTRODUCTION
+    std::map<std::string, std::string> ISBN;
 
+    ISBN.insert(std::make_pair("978-1-60309-452-8", "A Letter to Jo"));
+    ISBN.insert(std::make_pair("978-1-60309-459-7", "Lupus"));
+    ISBN.insert(std::make_pair("978-1-60309-444-3", "Red Panda and Moon Bear"));
+    ISBN.insert(std::make_pair("978-1-60309-461-0", "The Lab"));
+
+    for (std::map<std::string, std::string>::iterator it = ISBN.begin(); it != ISBN.end(); it++) {
+        std::cout << it -> second << " (ISBN: " << it -> first << ")" << std::endl;
+    }
+
+    ISBN.erase("978-1-60309-444-3");
+
+    for (std::map<std::string, std::string>::iterator it = ISBN.begin(); it != ISBN.end(); it++ ) {
+        if (it -> second == "The Lab") {
+            ISBN.erase(it);
+        }
+    }
+
+    std::cout << std::endl;
+
+    for (std::map<std::string, std::string>::iterator it = ISBN.begin(); it != ISBN.end(); it++) {
+        std::cout << it -> second << " (ISBN: " << it -> first << ")" << std::endl;
+    }
+    std::cout << std::endl;
+
+    ISBN.insert(std::make_pair("978-1-60309-450-4", "They Called Us Enemy"));
+    ISBN.insert(std::make_pair("978-1-60309-453-5", "Why Did We Trust Him?"));
+
+    std::cout << ISBN.count("487-0-61159-424-8") << std::endl;
+    std::cout << ISBN["978-1-60309-453-5"] << std::endl;
 
 
     return 0;
