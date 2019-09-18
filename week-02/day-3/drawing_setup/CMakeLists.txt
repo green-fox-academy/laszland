@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD 14)
 
 set(SDL2_ROOT_PATH /Users/peter/greenfox/SDL2_plugins)
 
-set(EXECUTABLES "draw;coloredBox;diagonals;goToCenter;horizontalLines;squareCenter;fourRectangles;positionSquare;centeredBoxes")
+set(EXECUTABLES "draw;coloredBox;diagonals;goToCenter;horizontalLines;squareCenter;fourRectangles;positionSquare;centeredBoxes;rainbowBoxes")
 set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
 
 IF(WIN32)
