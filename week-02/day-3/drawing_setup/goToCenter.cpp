@@ -1,34 +1,47 @@
 #include "draw.h"
 #include <iostream>
+#include <vector>
 
 void drawLines(SDL_Renderer* gRenderer);
 
-int userInputX;
-int userInputY;
+std::vector <int> coordX;
+std::vector <int> coordY;
+
 int numbLines;
-int *userInputXPtr = &userInputX;
-int *userInputYPtr = &userInputY;
+
+bool UserInput = false;
 
 void draw(SDL_Renderer* gRenderer) {
-    std::cout << "How many lines do you want to draw? ";
-    std::cin >> numbLines;
-    for (int i = 0; i < numbLines; i++) {
+    if (UserInput == false) {
+        std::cout << "How many lines do you want to draw? ";
+        std::cin >> numbLines;
         drawLines(gRenderer);
     }
+    UserInput = true;
+    for (int i = 0; i < numbLines; i++) {
+        SDL_SetRenderDrawColor(gRenderer, 82, 72, 165, 255);
+        SDL_RenderDrawLine(gRenderer, coordX[i], coordY[i], 320, 240);
+    }
+
+
+
 
 }
 
 void drawLines(SDL_Renderer* gRenderer) {
-    *userInputXPtr = 0;
-    *userInputYPtr = 0;
+    int varX;
+    int varY;
+    for (int i = 0; i < numbLines; i++) {
+        varX = 0;
+        std::cout << "Type the X coordinate of the starting point: ";
+        std::cin >> varX;
+        coordX.push_back(varX);
 
-    std::cout << "Type the X coordinate of the starting point: ";
-    std::cin >> *userInputXPtr;
+        varY = 0;
+        std::cout << "Type the Y coordinate of the starting point: ";
+        std::cin >> varY;
+        coordY.push_back(varY);
+    }
 
-    std::cout << "Type the Y coordinate of the starting point: ";
-    std::cin >> *userInputYPtr;
-
-    SDL_SetRenderDrawColor(gRenderer, 82, 72, 165, 255);
-    SDL_RenderDrawLine(gRenderer, userInputX, userInputY, 320, 240);
 }
 
