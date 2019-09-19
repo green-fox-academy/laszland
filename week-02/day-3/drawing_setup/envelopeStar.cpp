@@ -1,6 +1,13 @@
 #include "draw.h"
 #include <iostream>
 
+#define POINTS_COUNT 4
+static SDL_Point points[POINTS_COUNT] = {
+        {320, 200},
+        {300, 240},
+        {340, 240},
+        {320, 200}};
+
 void draw(SDL_Renderer* gRenderer) {
     int offSet = 10;
     SDL_SetRenderDrawColor(gRenderer, 110, 235, 131, 255);
@@ -14,4 +21,4 @@ void draw(SDL_Renderer* gRenderer) {
             SDL_RenderDrawLine(gRenderer, SCREEN_WIDTH / 2, SCREEN_HEIGHT - (i * offSet), SCREEN_WIDTH / 2 + (i * offSet), SCREEN_HEIGHT / 2);
         }
 
-}
+    }
