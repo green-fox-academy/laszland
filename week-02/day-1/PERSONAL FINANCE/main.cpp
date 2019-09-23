@@ -18,6 +18,9 @@ int main() {
     std::cout << "The sum of expenses is : "<< sumExpenses << std::endl;
     std::cout << "The average expense is : " << (float) sumExpenses / expenses.size() << std::endl;
 
+    /*Using the std lib sort function is kind of cheating here. 
+    I know that it is easier to use, but you should have excersised iterating through a vector 
+    and searching for the minimal value.*/
     std::sort(expenses.begin(), expenses.end());
 
     std::cout << expenses[0] << std::endl;
