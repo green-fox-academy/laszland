@@ -3,23 +3,34 @@
 #include <string>
 #include <fstream>
 
-int main () {
-    std::ifstream myFile;
-    myFile.exceptions(std::ifstream::failbit | std::ifstream::badbit);
-    try {
-        myFile.open("my-text.txt");
-        if (myFile.is_open()) {
-            std::cout << "yes" << std::endl;
-            std::string text;
-            getline(myFile, text);
-            std::cout << text << std::endl;
-            myFile.close();
-        } else {
-            std::cout << "no" << std::endl;
-        }
+//int countLines(std::string fileName);
+int numbLines = 0;
 
-    } catch (std::ifstream::failure &e) {
-        std::cout << e.what() << std::endl;
+int myText (std::string nameOFFile);
+
+int main () {
+    // Write a function that takes a filename as string,
+    // then returns the number of lines the file contains.
+    // It should return zero if it can't open the file.
+
+    std::cout << myText("my-text.txt") << std::endl;
+
+
+
+}
+
+int myText (std::string nameOFFile) {
+    std::ifstream myFile;
+    myFile.open(nameOFFile);
+    std::string contentOfFile;
+    if (myFile.is_open()) {
+        while (getline(myFile, contentOfFile)) {
+            numbLines++;
+        }
+        myFile.close();
+        return numbLines;
+    } else {
+        return 0;
     }
-   return 0;
+
 }
