@@ -8,20 +8,23 @@ int main() {
     // divides ten with it,
     // and prints the result.
     // It should print "fail" if the parameter is 0.
-    // Solve the excercise without using exceptions!
+    // Solve the excercise using exceptions!
+    // Hint: The try-catch block should be in main().
 
-    int numb = 2;
-    divideTen(numb);
+    try {
+        int numb = 0;
+        if (numb == 0) {
+            throw std::string("fail");
+        }
+        divideTen(numb);
+    } catch (std::string &e) {
+        std::cout << e << std::endl;
+    }
+
 
     return 0;
 }
 
-void divideTen(int number)
-{
-    if (number == 0) {
-        std::cout << "fail" << std::endl;
-    } else {
-        std::cout << 10 / number << std::endl;
-    }
-
+void divideTen(int number) {
+    std::cout << 10 / number << std::endl;
 }
