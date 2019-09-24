@@ -1,35 +1,48 @@
 #include <iostream>
-#include <exception>
 #include <fstream>
 #include <string>
+#include <exception>
 
-void writeMyFile (std::string file, std::string word, int numbLines);
+// Write a function that reads all lines of a file and writes the read lines to an other file (a.k.a copies the file)
+// It should take the filenames as parameters
+// It should return a boolean that shows if the copy was successful
+
+bool copyMyFile (std::string input, std::string output);
 
 int main() {
-    // Create a function that takes 3 parameters: a path, a word and a number
-    // and is able to write into a file.
-    // The path parameter should be a string that describes the location of the file you wish to modify
-    // The word parameter should also be a string that will be written to the file as individual lines
-    // The number parameter should describe how many lines the file should have.
-    // If the word is "apple" and the number is 5, it should write 5 lines
-    // into the file and each line should read "apple"
-    std::string pathOfFile = "/Users/peter/greenfox/laszland/week-03/outputFile.txt";
-    std::string str = "banana";
-    int numberOfLines = 5;
-    writeMyFile(pathOfFile, str, numberOfLines);
+
+    std::string inputFileName = "/Users/peter/greenfox/laszland/week-03/rescourceFile.txt";
+    std::string outputFileName = "outputFile.txt";
+
+    if (copyMyFile(inputFileName, outputFileName) == 1) {
+        std::cout << "The copy was successful." << std::endl;
+    } else {
+        std::cout << "The copy wasn't successful." << std::endl;
+    }
     return 0;
 }
 
-void writeMyFile (std::string file, std::string word, int numbLines) {
-    std::ofstream myFile;
-    myFile.exceptions(std::ofstream::failbit | std::ofstream::badbit);
+//declare function
+bool copyMyFile (std::string input, std::string output) {
+    int numbOfLines = 0;
+    std::ifstream inputFile;
+    std::ofstream outputFile;
+    inputFile.exceptions(std::ifstream::failbit | std::ifstream::badbit);
     try {
-        myFile.open(file);
-        for (int i = 0; i < numbLines; i++) {
-            myFile << word << std::endl;
-        }
-        myFile.close();
-    } catch (std::ofstream::failure& e) {
+        inputFile.open(input);
+        outputFile.open(output);
+        std::string contentOfFile;
+        while (getline(inputFile, contentOfFile)) {
+            outputFile << contentOfFile << std::endl;
+            numbOfLines++;
+        } inputFile.close();
+        outputFile.close();
+    } catch (std::ifstream::failure& e) {
         std::cout << e.what() << std::endl;
+    }
+    if (numbOfLines != 0) {
+        return 1;
+    } else {
+        return 0;
     }
 }
