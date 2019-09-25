@@ -1,13 +1,35 @@
 #include <iostream>
 #include "Counter.h"
 
-int main() {
-    Counter numb1;
-    numb1.add(6);
-    numb1.get();
-    numb1.add(2);
-    numb1.get();
-    numb1.reset();
-    numb1.get();
+void checkValue(const std::string& name, int expected, int actual)
+{
+    if(expected != actual) {
+        std::cout << name << "Failed! Expected: " << expected << " Actual: " << actual << std::endl;
+    }
+    else {
+        std::cout << name << "Passed!" << std::endl;
+    }
+}
+
+int main()
+{
+    Counter c;
+    checkValue("getZero", 0, c.get());
+
+    c.add(5);
+    checkValue("addMore", 5, c.get());
+
+    c.add();
+    checkValue("addOne", 6, c.get());
+
+    c.reset();
+    checkValue("getZero2", 0, c.get());
+
+    Counter c2(7);
+    checkValue("getInit", 7, c2.get());
+
+    c2.reset();
+    checkValue("reset", 7, c2.get());
+
     return 0;
 }

@@ -18,7 +18,7 @@ int Counter::add(int x) {
 }
 
 int Counter::get() {
-    std::cout << "Your number is: " << _number << std::endl;
+    return _number;
 }
 
 int Counter::reset() {
