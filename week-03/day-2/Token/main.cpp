@@ -12,7 +12,9 @@ int main() {
     std::string line;
 
     while (std::getline(originalText, line)) {
-        std::cout << originalText << std::endl;
+        for (int i = 0; i < line.size(); i +=2) {
+            std::cout << line[i];
+        } std::cout << std::endl;
     }
 
     return 0;

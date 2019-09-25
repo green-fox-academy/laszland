@@ -11,14 +11,13 @@ int main() {
     std::string dataOfTrees;
     if (trees.is_open() == 1) {
         while (getline(trees, dataOfTrees)) {
-            //std::cout << dataOfTrees << std::endl;
             dataBase.push_back(dataOfTrees);
         }
     } else {
         std::cout << "file couldn't be opened" << std::endl;
     }
     for (int i = 0; i < 4; i++) {
-        
+     std::cout << dataBase[i] << std::endl;
     }
 
 }
