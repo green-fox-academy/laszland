@@ -18,6 +18,10 @@ void Station::fill() {
         while (!cars[i].isFull()) {
             cars[i].fill();
             _gasAmount--;
+                if (_gasAmount <= 0) {
+                    _gasAmount = 0;
+                    throw std::string ("We are out of gas! :(");
+                }
             std::cout << "Filling car!" << std::endl;
 
         }

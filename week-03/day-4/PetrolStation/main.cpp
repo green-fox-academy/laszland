@@ -3,7 +3,8 @@
 #include "Car.h"
 
 int main() {
-    Station station(100);
+
+    Station station(10);
 
     Car car1(3, 5);
     Car car2(4, 10);
@@ -17,7 +18,13 @@ int main() {
     station.add(&car4);
     station.add(&car5);
 
-    station.fill();
+    try {
+        station.fill();
+    } catch(std::string errorMassage) {
+        std::cout << errorMassage << std::endl;
+    };
+
+
 
     return 0;
 }
