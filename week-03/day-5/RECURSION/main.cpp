@@ -1,24 +1,23 @@
 #include <iostream>
 
-int addNumbers(int numb);
+int addDigits(int n);
 
 int main() {
 
-    int numberOfUser;
+    int numb;
 
-    std::cout << "Give me a number: ";
-    std::cin >> numberOfUser;
+    std::cout << "Give me a non-negative integer: ";
+    std::cin >> numb;
 
-    std::cout << "The summary of all the numbers is: " << addNumbers(numberOfUser) << std::endl;
-
+    std::cout << "The sum of the yours numbers digits is: " << addDigits(numb);
 
 
     return 0;
 }
 
-int addNumbers(int numb) {
-    if (numb == 1) {
-        return 1;
+int addDigits(int n) {
+    if (n < 10) {
+        return n;
     }
-    return numb + addNumbers(numb - 1);
+    return n % 10 + (addDigits(n / 10));
 }
