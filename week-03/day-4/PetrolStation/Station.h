@@ -8,6 +8,8 @@
 
 #include "Car.h"
 
+
+
 class Station {
 
 public:
@@ -18,7 +20,7 @@ public:
 
 private:
     int _gasAmount;
-    std::vector<Car> cars;
+    std::vector<Car*> cars;
 };
 
 

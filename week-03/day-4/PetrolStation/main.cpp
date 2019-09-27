@@ -4,7 +4,7 @@
 
 int main() {
 
-    Station station(10);
+    Station station(100000);
 
     Car car1(3, 5);
     Car car2(4, 10);
