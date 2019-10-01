@@ -2,18 +2,14 @@
 #define INSTRUMENTS_INSTRUMENT_H
 
 #include <iostream>
-#include <vector>
 
 
 class Instrument {
 
 public:
-    Instrument();
-
-    void virtual play();
+    void virtual play() = 0;
 
 protected:
-
 
 };
 

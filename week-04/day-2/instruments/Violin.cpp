@@ -8,5 +8,5 @@ Violin::Violin(int numberOfStrings) : StringedInstrument(numberOfStrings, "Scree
 Violin::Violin() : Violin( 4) {}
 
 void Violin::play() {
-    std::cout << "Violin a " << _numberOfStrings << "-stringged instrument that goes " << _sound << "." << std::endl;
+    std::cout << "Violin a " << _numberOfStrings << "-stringed instrument that goes " << _sound << "." << std::endl;
 }

@@ -9,6 +9,6 @@ BassGuitar::BassGuitar(int numberOfStrings) :
 BassGuitar::BassGuitar() : BassGuitar(4) {}
 
 void BassGuitar::play() {
-    std::cout << "Bass Guitar a " << _numberOfStrings << "-stringged instrument that goes " << _sound << "." << std::endl;
+    std::cout << "Bass Guitar a " << _numberOfStrings << "-stringed instrument that goes " << _sound << "." << std::endl;
 }
 

@@ -13,7 +13,6 @@ public:
     void play() override;
 
 private:
-    std::string _sound;
 
 };
 
