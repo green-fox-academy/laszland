@@ -72,14 +72,6 @@ void removeTask(int indexOfTask) {
     std::ofstream temp;
     temp.open("temp.txt");
 
-    /*
-    if(temp.is_open()) {
-        std::cout << "The temp.txt is open." << std::endl;
-    }
-    else {
-        std::cout << "There is an error with temp.txt." << std::endl;
-        }
-    */
 
     int count = 1;
     std::string listOfTasks;
@@ -87,21 +79,39 @@ void removeTask(int indexOfTask) {
     while (getline(myFile, listOfTasks)) {
         if (count != indexOfTask) {
             temp << listOfTasks << std::endl;
-            //std::cout << "I copied the task item." << std::endl;
             count++;
         } else {
             count++;
-            //std::cout << "I didn't copy the task item." << std::endl;
         }
     }
     temp.close();
-    //std::cout << "I closed the temp.txt." << std::endl;
     myFile.close();
-    //std::cout << "I closed the myFile." << std::endl;
     remove("listOfTasks.txt");
-    //std::cout << "I removed the lostOfTask.txt." << std::endl;
     rename("temp.txt", "listOfTasks.txt");
-    //std::cout << "I renamed temp.txt." << std::endl;
+}
+
+void checkTask(int indexOfTask) {
+    std::ifstream myFile;
+    myFile.open("listOfTasks.txt");
+    std::ofstream temp;
+    temp.open("temp.txt");
+
+    int count = 1;
+    std::string readingTask;
+
+    while (getline(myFile, readingTask)) {
+        if (count != indexOfTask) {
+            temp << readingTask << std::endl;
+            count++;
+        } else {
+            temp << readingTask + " -> [ DONE ]" << std::endl;
+            count++;
+        }
+    }
+    temp.close();
+    myFile.close();
+    remove("listOfTasks.txt");
+    rename("temp.txt", "listOfTasks.txt");
 }
 
 
@@ -121,8 +131,13 @@ int main(int argc, char* argv[]) {
         if (argc == 2) {
             std::cout << "Which task want you to remove? Please, type its index after -r!" << std::endl;
         } else {
-            //std::cout << std::stoi(argv[2]) << std::endl;
             removeTask(std::stoi(argv[2]));
+        }
+    } else if (argv[1] == std::string ("-c")) {
+        if (argc == 2) {
+            std::cout << "Which task want you to check? Please, type its index after -c!" << std::endl;
+        } else {
+            checkTask(std::stoi(argv[2]));
         }
     }
 
