@@ -32,11 +32,9 @@ void listTasks() {
     std::cout << "Your tasks are: " << std::endl;
     std::cout << "======================== " << std::endl;
 
-    // iteration + empty file function
     std::string printList;
     int count = 1;
-
-    bool isEmpty = myFile.peek() == EOF;
+    bool isEmpty = myFile.peek() == EOF; // boolean about is myFile empty or not
     if (isEmpty) {
         std::cout << "No todos for today!" << std::endl;
         std::cout << std::endl;
@@ -45,11 +43,28 @@ void listTasks() {
             std::cout << count << " - " << printList << std::endl;
             count++;
         }
+    }
+    std::cout << std::endl;
+    myFile.close();
+}
+
+void addNewTask(std::string newTask) {
+    // opening the listOfTask.txt
+    std::ofstream myFile;
+    myFile.open("listOfTasks.txt");
+    if (myFile.is_open()) {
+        std::cout << "Opening file is succeeded!" <<std::endl;
+        std::cout << std::endl;
+    } else {
+        std::cout << "File opening ERROR" << std::endl;
         std::cout << std::endl;
     }
-    myFile.close();
 
+    myFile << newTask;
+    std::cout << "Task is added." << std::endl;
+    myFile.close();
 }
+
 
 int main(int argc, char* args[]) {
 
@@ -57,6 +72,11 @@ int main(int argc, char* args[]) {
         printUsage();
     } else if (args[1] == std::string ("-l")) {
         listTasks();
+    } else if (args[1] == std::string ("-a")) {
+        if (argc ==  2) {
+            std::cout << "You didn't added any task. Please, type your task in after -a!" << std::endl;
+        }
+        addNewTask(args[2]);
     }
 
     return 0;
