@@ -71,12 +71,15 @@ void removeTask(int indexOfTask) {
     myFile.open("listOfTasks.txt");
     std::ofstream temp;
     temp.open("temp.txt");
+
+    /*
     if(temp.is_open()) {
         std::cout << "The temp.txt is open." << std::endl;
     }
     else {
         std::cout << "There is an error with temp.txt." << std::endl;
         }
+    */
 
     int count = 1;
     std::string listOfTasks;
@@ -118,7 +121,7 @@ int main(int argc, char* argv[]) {
         if (argc == 2) {
             std::cout << "Which task want you to remove? Please, type its index after -r!" << std::endl;
         } else {
-            std::cout << std::stoi(argv[2]) << std::endl;
+            //std::cout << std::stoi(argv[2]) << std::endl;
             removeTask(std::stoi(argv[2]));
         }
     }
