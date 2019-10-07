@@ -7,12 +7,14 @@ float averagePrise(std::map<std::string, int> myMap);
 void belowThreehundred(std::map<std::string, int> myMap);
 bool for125(std::map<std::string, int> myMap);
 void cheapestProduct(std::map<std::string, int> myMap);
+void lessThan201(std::map<std::string, int> myMap);
+void moreThan150(std::map<std::string, int> myMap);
 
 int main () {
 
     std::map<std::string, int> products;
     products["eggs"] = 200;
-    products["milk"] = 200;
+    products["milk"] = 150;
     products["fish"] = 400;
     products["apples"] = 125;
     products["bread"] = 50;
@@ -37,6 +39,8 @@ int main () {
     }
 
     cheapestProduct(products);
+    lessThan201(products);
+    moreThan150(products);
 
     return 0;
 }
@@ -98,6 +102,25 @@ void cheapestProduct(std::map<std::string, int> myMap) {
         }
     }
     std::cout << "The cheapest product is: " << tempProduct << "; " << temp << std::endl;
+}
+
+void lessThan201(std::map<std::string, int> myMap) {
+    std::cout << "The products for less than 201: ";
+    for (std::map<std::string, int>::iterator it = myMap.begin(); it != myMap.end(); it++) {
+        if (it -> second < 201) {
+            std::cout << it -> first << "; ";
+        }
+    }
+    std::cout << std::endl;
+}
+
+void moreThan150(std::map<std::string, int> myMap) {
+    std::cout << "The products over 150:" << std::endl;
+    for (std::map<std::string, int>::iterator it = myMap.begin(); it != myMap.end(); it++) {
+        if (it -> second > 150) {
+            std::cout << it -> first << "; " << it -> second << std::endl;
+        }
+    }
 }
 
 
