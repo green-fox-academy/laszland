@@ -5,6 +5,8 @@ void payBob(std::map<std::string, float> listOfProducts, std::map<std::string, i
 void payAlice(std::map<std::string, float> listOfProducts, std::map<std::string, int> listOfAlice);
 std::string moreRice(std::map<std::string, int> listOfBob, std::map<std::string, int> listOfAlice);
 std::string morePotato(std::map<std::string, int> listOfBob, std::map<std::string, int> listOfAlice);
+std::string moreProducts(std::map<std::string, int> listOfBob, std::map<std::string, int> listOfAlice);
+std::string moreItem(std::map<std::string, int> listOfBob, std::map<std::string, int> listOfAlice);
 
 int main() {
     std::map<std::string, float > productList;
@@ -46,6 +48,8 @@ int main() {
     payAlice(productList, shoppingListAlice);
     std::cout << moreRice(shoppingListBob, shoppingListAlice) << " has bought more rice." << std::endl;
     std::cout << morePotato(shoppingListBob, shoppingListAlice) << " has bought more potato." << std::endl;
+    std::cout << moreProducts(shoppingListBob, shoppingListAlice) << " has bought more products." << std::endl;
+    std::cout << moreItem(shoppingListBob, shoppingListAlice) << " has bought more items." << std::endl;
 
 
     return 0;
@@ -74,3 +78,23 @@ std::string moreRice(std::map<std::string, int> listOfBob, std::map<std::string,
 std::string morePotato(std::map<std::string, int> listOfBob, std::map<std::string, int> listOfAlice) {
     return listOfBob["Potato"] > listOfAlice["Potato"] ? "Bob" : "Alice";
 }
+
+std::string moreProducts(std::map<std::string, int> listOfBob, std::map<std::string, int> listOfAlice) {
+
+    return listOfBob.size() > listOfAlice.size() ? "Bob" : "Alice";
+}
+
+std::string moreItem(std::map<std::string, int> listOfBob, std::map<std::string, int> listOfAlice) {
+    int sumOfItemBob = 0;
+    int sumOfItemAlice = 0;
+
+    for (std::map<std::string, int>::iterator it = listOfBob.begin(); it != listOfBob.end(); it++) {
+        sumOfItemBob += it -> second;
+    }
+
+    for (std::map<std::string, int>::iterator it = listOfAlice.begin(); it != listOfAlice.end(); it++) {
+        sumOfItemAlice += it -> second;
+    }
+    return listOfBob > listOfAlice ? "Bob" : "Alice";
+}
+
