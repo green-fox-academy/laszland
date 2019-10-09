@@ -2,7 +2,7 @@
 #include "Extension.h"
 
 TEST(add, _2and3is5) {
-    ASSERT_EQ(5, add(2, 3));
+    ASSERT_EQ(7, add(2, 5));
 }
 
 TEST(add, _1and4is5) {
@@ -10,19 +10,19 @@ TEST(add, _1and4is5) {
 }
 
 TEST(max_of_three, first) {
-    ASSERT_EQ(5, maxOfThree(5, 4, 3));
+    ASSERT_EQ(9, maxOfThree(5, 7, 9));
 }
 
 TEST(max_of_three, third) {
-    ASSERT_EQ(5, maxOfThree(3, 4, 5));
+    ASSERT_EQ(11, maxOfThree(1, 11, 6));
 }
 
 TEST(median, four) {
-    ASSERT_EQ(5, median({7, 5, 3, 5}));
+    ASSERT_EQ(11, median({10, 11, 12, 13}));
 }
 
 TEST(median, five) {
-    ASSERT_EQ(3, median({1, 2, 3, 4, 5}));
+    ASSERT_EQ(13, median({11, 12, 13, 13, 13, 14, 15}));
 }
 
 TEST(is_vowel, a) {
@@ -34,7 +34,7 @@ TEST(is_vowel, u) {
 }
 
 TEST(translate, bemutatkozik) {
-    ASSERT_EQ("bevemuvutavatkovozivik", translate("bemutatkozik"));
+    ASSERT_EQ("havaravagovos", translate("haragos"));
 }
 
 TEST(translate, lagopus) {

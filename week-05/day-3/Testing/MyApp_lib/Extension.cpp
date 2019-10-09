@@ -1,22 +1,26 @@
 #include "Extension.h"
+
 #include <algorithm>
 #include <sstream>
 
 int add(int a, int b)
 {
-    return 5;
+    return a + b;
 }
 
 int maxOfThree(int a, int b, int c)
 {
-    if (a > b)
+    // todo: create exception to equal values
+    if (a > b && a > c)
         return a;
-    else
+    else if (b > a && b > c)
+        return b;
+    else if (c > a && c > b)
         return c;
 }
 
 int median(const std::vector<int>& pool) {
-    return pool.at((pool.size()-1)/2);
+    return pool.at((pool.size() - 1) / 2);
 }
 
 bool isVowel(char c) {
