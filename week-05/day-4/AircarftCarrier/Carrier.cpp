@@ -42,7 +42,8 @@ bool Carrier::isEnoughAmmo() {
 }
 
 void Carrier::fight(Carrier& otherCarrier) {
-
+    _healthPoint -= otherCarrier.totalDamage();
+    
 }
 
 void Carrier::getStatus() {
@@ -51,7 +52,7 @@ void Carrier::getStatus() {
               <<", Aircraft count: " << _carrierOfAircrafts.size()
               << ", Ammo Storage: " << _amountAmmo
               << ", Total Damage: " << totalDamageOfThisCarrier << std::endl;
-    
+
     for (Aircrafts* aircraft : _carrierOfAircrafts) {
         aircraft -> getStatus();
     }
