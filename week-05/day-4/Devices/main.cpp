@@ -42,6 +42,9 @@ int main() {
     for (int j = 0; j < scanners.size(); ++j) {
         scanners[j] -> scan();
     }
+    std::cout << std::endl;
+
+    copyMashine1.copy();
 
 
     return 0;
