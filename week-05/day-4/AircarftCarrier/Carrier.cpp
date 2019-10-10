@@ -1,3 +1,4 @@
+#include <iostream>
 #include "Carrier.h"
 
 Carrier::Carrier(int storageAmmo, int amountAmmo, int healthPoint) : _storageAmmo(storageAmmo), _amountAmmo(amountAmmo),
@@ -38,4 +39,28 @@ bool Carrier::isEnoughAmmo() {
         requiredAmmo += aircraft->getMaxAmmo();
     }
     return requiredAmmo <= _amountAmmo ? true : false;
+}
+
+void Carrier::fight(Carrier& otherCarrier) {
+
+}
+
+void Carrier::getStatus() {
+    int totalDamageOfThisCarrier = totalDamage();
+    std::cout << "HP: " << _healthPoint
+              <<", Aircraft count: " << _carrierOfAircrafts.size()
+              << ", Ammo Storage: " << _amountAmmo
+              << ", Total Damage: " << totalDamageOfThisCarrier << std::endl;
+    
+    for (Aircrafts* aircraft : _carrierOfAircrafts) {
+        aircraft -> getStatus();
+    }
+}
+
+int Carrier::totalDamage() {
+    int totalDamage = 0;
+    for (Aircrafts* aircraft : _carrierOfAircrafts) {
+        totalDamage += aircraft -> getBaseDamage();
+    }
+    return totalDamage;
 }

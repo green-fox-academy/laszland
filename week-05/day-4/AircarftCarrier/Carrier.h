@@ -11,8 +11,10 @@ public:
 
     void add(Aircrafts*);
     void fill();
-    void fight();
+    void fight(Carrier&);
     bool isEnoughAmmo();
+    void getStatus();
+    int totalDamage();
 
 private:
     int _storageAmmo;

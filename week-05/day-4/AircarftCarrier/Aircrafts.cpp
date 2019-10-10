@@ -42,3 +42,7 @@ bool Aircrafts::isPriority() {
 int Aircrafts::getMaxAmmo() const {
     return _maxAmmo;
 }
+
+int Aircrafts::getBaseDamage() const {
+    return _baseDamage;
+}

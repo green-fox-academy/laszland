@@ -15,6 +15,7 @@ public:
 
     int getMaxAmmo() const;
 
+    int getBaseDamage() const;
 
 private:
     int _maxAmmo;
