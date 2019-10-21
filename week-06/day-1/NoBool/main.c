@@ -1,30 +1,27 @@
 #include <stdio.h>
 
-
-int are_they_equal(int a, int b);
-
+int is_even(int numb);
 
 int main()
 {
-    // Create a program which asks for two integers and stores them separately
-    // Create a function which takes two numbers as parameters and
-    // returns 1 if they are equal and returns 0 otherwise
+    // Create a program which asks for a number and stores it
+    // Create a function which takes a number as a parameter and
+    // returns 1 if that number is even and returns 0 otherwise
+    // (in this case 0 is an even number)
 
-    int numb1 = 0;
-    int numb2 = 0;
+    int users_number = 0;
 
-    printf("Give me two number!\n");
-    scanf("%d", &numb1);
-    scanf("%d", &numb2);
+    printf("Type your number: ");
+    scanf("%d", &users_number);
 
-    are_they_equal(numb1, numb2) ? printf("The two number are equal\n") : printf("The two number aren't equal.\n");
-
+    is_even(users_number) ? printf("Your number is even.\n") : printf("Your number is odd.\n");
     return 0;
 }
 
-int are_they_equal(int a, int b)
+int is_even(int numb)
 {
-    if (a == b)
-        return 1;
-    else return 0;
+    int output = 0;
+    if (numb % 2 == 0)
+        output = 1;
+    return output;
 }
