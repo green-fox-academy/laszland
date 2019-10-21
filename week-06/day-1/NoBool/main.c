@@ -1,26 +1,30 @@
 #include <stdio.h>
-#define OVER_AGE 18
+
+
+int are_they_equal(int a, int b);
+
 
 int main()
 {
-    // Create a program which asks for the age of the user and stores it
-    // Create a function which takes that age as a parameter and returns if the user is
-    // old enough to buy himself alcohol in Hungary
+    // Create a program which asks for two integers and stores them separately
+    // Create a function which takes two numbers as parameters and
+    // returns 1 if they are equal and returns 0 otherwise
 
-    int age_of_user = 0;
-    int is_over_age = 0;
+    int numb1 = 0;
+    int numb2 = 0;
 
-    printf("How old are you? ");
-    scanf("%d", &age_of_user);
+    printf("Give me two number!\n");
+    scanf("%d", &numb1);
+    scanf("%d", &numb2);
 
-    if (age_of_user >= OVER_AGE)
-        is_over_age = 1;
-
-    if (is_over_age)
-        printf("You are aloud to drink alcohol in Hungary");
-    else
-        printf("You are not aloud to drink alcohol in Hungary.");
-
+    are_they_equal(numb1, numb2) ? printf("The two number are equal\n") : printf("The two number aren't equal.\n");
 
     return 0;
+}
+
+int are_they_equal(int a, int b)
+{
+    if (a == b)
+        return 1;
+    else return 0;
 }
