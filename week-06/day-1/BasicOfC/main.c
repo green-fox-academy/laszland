@@ -1,8 +1,16 @@
 #include <stdio.h>
 
 int main() {
-    // Modify this program to greet you instead of the World!
-    printf("Hello, Laci!\n");
+    // Greet 3 of your classmates with this program, in three separate lines
+    // like:
+    //
+    // Hello, Esther!
+    // Hello, Mary!
+    // Hello, Joe!
+
+    printf("Hello, Robi!\n");
+    printf("Hello, Levi!\n");
+    printf("Hello, Balint!\n");
 
     return 0;
 }
