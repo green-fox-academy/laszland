@@ -14,9 +14,16 @@ int main() {
     //  31
     //  1.87
 
-    char name[] = "Laci";
-    int age = 33;
-    float height = 1.62;
+    char name[512];
+    int age = 0;
+    float height = 0;
+
+    printf("What is your name?\n");
+    scanf("%s", name);
+    printf("How old are you?\n");
+    scanf("%d", &age);
+    printf("How tall are you?\n");
+    scanf("%f", &height);
 
     printf("Hello, %s, your are %d years old and %0.2f tall.", name, age, height);
 
