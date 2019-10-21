@@ -1,31 +1,35 @@
 #include <stdio.h>
 
 int main() {
-    // Write a program that prints a few details to the terminal window about you
-    // It should print each detail to a new line.
-    //  - Your name
-    //  - Your age
-    //  - Your height in meters (as a decimal fraction)
-    //
-    //  Use variables to store the information!
-    //
-    //  Example output:
-    //  John Doe
-    //  31
-    //  1.87
+    // Create a program that prints a few operations on two numbers: 22 and 13
 
-    char name[512];
-    int age = 0;
-    float height = 0;
+    // Print the result of 13 added to 22
 
-    printf("What is your name?\n");
-    scanf("%s", name);
-    printf("How old are you?\n");
-    scanf("%d", &age);
-    printf("How tall are you?\n");
-    scanf("%f", &height);
+    // Print the result of 13 subtracted from 22
 
-    printf("Hello, %s, your are %d years old and %0.2f tall.", name, age, height);
+    // Print the result of 22 multiplied by 13
+
+    // Print the result of 22 divided by 13 (as a decimal fraction)
+
+    // Print the remainder of 22 divided by 13
+
+    // Store the results in variables and use them when you display the result
+
+    int numbA = 22;
+    int numbB = 13;
+
+    int added = numbA + numbB;
+    int subtract = numbA - numbB;
+    int multiplied = numbA * numbB;
+    float divided = (float) numbA / numbB;
+    int remainder = numbA % numbB;
+
+    printf("22 + 13 = %d\n", added);
+    printf("22 - 13 = %d\n", subtract);
+    printf("22 * 13 = %d\n", multiplied);
+    printf("22 / 13 = %.4f\n", divided);
+    printf("22 %% 13 = %d\n", remainder);
+
 
     return 0;
 }
