@@ -1,28 +1,29 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-int main() {
+#define PI 3.14
 
-    // Write a program that stores a number, and the user has to figure it out.
-    // The user can input guesses, after each guess the program would tell one
-    // of the following:
-    //
-    // The stored number is higher
-    // The stored number is lower
-    // You found the number: 8
+// define a variable called PI with the value of 3.14
+// create a function which takes the radius of a circle as a parameter
+// and return the area of that circle
+// area = radius * radius * PI
 
-    int number = 9;
-    int users_guess = 0;
+float calculate_area(int radius);
 
-    while (number != users_guess) {
-        printf("Type your guess!\n");
-        scanf("%d", &users_guess);
-        if (users_guess > number) {
-            printf("The stored number is lower.\n");
-        } else if (users_guess < number) {
-            printf("The stored number is higher.\n");
-        }
-    }
-    printf("You found the number: %d", number);
 
+int main()
+{
+    int radius = 0;
+    printf("The radius of your circle is: ");
+    scanf("%d", &radius);
+
+    printf("The area of your circle is %.2f.", calculate_area(radius));
     return 0;
+}
+
+float calculate_area(int radius)
+{
+    float area = 0;
+    area = (float)radius * radius * PI;
+    return area;
 }
