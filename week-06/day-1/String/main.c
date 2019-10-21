@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
+
+int count_characters(char * name);
+
 
 int main()
 {
@@ -13,7 +15,22 @@ int main()
     printf("What is your name?\n");
     scanf("%s", name_of_user);
 
-    printf("Wow your name is %lu characters long.", strlen(name_of_user));
+
+    printf("Wow your name is %d characters long.", count_characters(name_of_user));
 
     return 0;
+}
+
+int count_characters(char * name)
+{
+    int size = 0;
+    while (*name++) ++size;
+
+    /*
+    for (int i = 0; name[i] != '\0'; ++i) {
+        size++;
+    }
+     */
+
+    return size;
 }
