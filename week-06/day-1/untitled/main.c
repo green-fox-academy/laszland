@@ -48,6 +48,10 @@ int main() {
     printf("myVar in binary:\t");
     PrintBinary(myVar);
 
+    myVar = myVar ^ 0xbf;
+    printf("myVar in binary:\t");
+    PrintBinary(myVar);
+
 
 
     return 0;
