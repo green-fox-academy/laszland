@@ -40,7 +40,7 @@ int CountZeros(int byte)
     byte & 0x02 ? number_of_zeros : number_of_zeros++;
     byte & 0x01 ? number_of_zeros : number_of_zeros++;
     */
-    
+
     int start_to_count = 0;
     for (int i = 7; i >= 0; i--) {
         if (byte & (0x01 << i)) {
