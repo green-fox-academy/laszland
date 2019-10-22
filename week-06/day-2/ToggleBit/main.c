@@ -14,9 +14,14 @@ void PrintBinary(uint8_t byte) {
 
 uint8_t ToggleBit(int byte, int position)
 {
+    /*
     uint8_t bit_mask = 0x1;
     bit_mask = bit_mask << position;
     byte = byte ^ bit_mask;
+    */
+
+    byte ^= (1 << position);
+
     return byte;
 }
 
