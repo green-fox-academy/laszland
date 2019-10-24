@@ -76,6 +76,6 @@ int main()
 
     printf("The number of cars which are older than %d: %d\n", 2011, older_than);
     printf("The number of cars which has manual transmission: %d\n", has_manual);
-    
+
     return 0;
 }
