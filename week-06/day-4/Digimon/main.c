@@ -57,10 +57,10 @@ typedef enum {
 } digivolution_t;
 
 typedef struct {
-    char name[128];
+    char* name;
     int age;
     int health;
-    char name_tamer[256];
+    char* name_tamer;
     digivolution_t level;
 
 } digimon_t;
@@ -88,7 +88,7 @@ int get_digim_same_level(digimon_t* list[], int length, digivolution_t level)
     return counter;
 }
 
-int get_same_tamer(digimon_t* list[], int length, char tamers_name)
+int get_same_tamer(digimon_t* list[], int length, char* tamers_name)
 {
     int counter = 0;
     for (int i = 0; i < length; ++i) {
@@ -98,7 +98,7 @@ int get_same_tamer(digimon_t* list[], int length, char tamers_name)
     return counter;
 }
 
-float average_health_by_tamer(digimon_t* list[], int length, char name_tamer)
+float average_health_by_tamer(digimon_t* list[], int length, char* name_tamer)
 {
     int counter = 0;
     int sum_health = 0;
@@ -113,21 +113,41 @@ float average_health_by_tamer(digimon_t* list[], int length, char name_tamer)
     return average;
 }
 
-
+digimon_t create_digimon(char* name, int age, int health, char* name_tamer, digivolution_t level)
+{
+    if (health > 100) health = 100;
+    if (health < 0) health = 0;
+    if (age < 0) age = 0;
+    digimon_t digi = {name, age, health, name_tamer, level};
+    return digi;
+}
 
 int main()
 {
-    digimon_t dig1 = {"Bemmon", 20, 99, "John", ROOKIE};
-    digimon_t dig2 = {"Boogiemon", 12, 50, "Sarah", ULTIMATE};
-    digimon_t dig3 = {"Gaomon", 2, 43, "Kevin", BABY};
-    digimon_t dig4 = {"Hubmon", 34, 12, "Monica", IN_TRAINING};
-    digimon_t dig5 = {"Kyubimon", 77, 78, "Adam", CHAMPION};
-    digimon_t dig6 = {"Monodramon", 69, 100, "Victoria", MEGA};
 
-    digimon_t* digimons[] = {&dig1, &dig2, &dig3, &dig4, &dig5, &dig6};
+    //digimon_t dig1 = {"Bemmon", 20, 99, "John", ROOKIE};
+    //digimon_t dig2 = {"Boogiemon", 12, 50, "Sarah", ULTIMATE};
+    //digimon_t dig3 = {"Gaomon", 2, 43, "Kevin", BABY};
+    //digimon_t dig4 = {"Hubmon", 34, 12, "Monica", IN_TRAINING};
+    //digimon_t dig5 = {"Kyubimon", 77, 78, "Adam", CHAMPION};
+    //digimon_t dig6 = {"Monodramon", 69, 100, "Victoria", MEGA};
+
+    digimon_t dig1 = create_digimon("Bemmom", 20, 99, "John", ROOKIE);
+    digimon_t dig2 = create_digimon("Boogiemon", -4, 111, "John", ULTIMATE);
+    digimon_t dig3 = create_digimon("Gaomon", 2, -111, "Kevin", BABY);
+    digimon_t dig4 = create_digimon("Hubmon", 54, 50, "Kevin", ULTIMATE);
+
+    printf("Boogimons age: %d\n", dig2.age);
+    printf("Boogimons health: %d\n", dig2.health);
+    printf("Gaomons health: %d\n", dig3.health);
+
+    digimon_t* digimons[] = {&dig1, &dig2, &dig3, &dig4};
     int length_digimons = sizeof(digimons) / sizeof(digimons[0]);
 
-
+    printf("The index of the digimon with less health: %d\n", get_minimum_health(digimons, length_digimons));
+    printf("The number of digimons on the level of Ultimate: %d\n", get_digim_same_level(digimons, length_digimons, ULTIMATE));
+    printf("The number of digimons of the same tamer: %d\n", get_same_tamer(digimons, length_digimons, "John"));
+    printf("The average health of digimons of the same tamer: %.2f\n", average_health_by_tamer(digimons, length_digimons, "John"));
 
     return 0;
 }
