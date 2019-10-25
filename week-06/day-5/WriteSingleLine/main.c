@@ -12,6 +12,8 @@
 // If the word is "apple" and the number is 5, it should write 5 lines
 // into the file and each line should read "apple"
 
+void write_into_file(char *path, char *word, int number);
+
 int main ()
 {
     FILE * fptr;
@@ -21,5 +23,27 @@ int main ()
 
     char my_name[] = "Laszlo Roland Kiss";
     fprintf(fptr, "%s", my_name);
+
+    fclose(fptr);
+
+    char path[] = "../../CountLines/cmake-build-debug/lines.txt";
+    char word[] = "I'm maniac.";
+    int number = 100;
+
+    write_into_file(path, word, number);
+
+
     return 0;
+}
+
+void write_into_file(char *path, char* word, int number)
+{
+    FILE * file_ptr;
+    file_ptr = fopen(path, "a");
+    if (file_ptr == NULL)
+        printf("There is an ERROR.");
+
+    for(int i = 0; i < number; i++)
+        fprintf(file_ptr, "%s\n", word);
+    fclose(file_ptr);
 }
