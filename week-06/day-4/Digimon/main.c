@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 /* Digimon database!
  * You should store the following data in a structure
@@ -104,7 +105,7 @@ float average_health_by_tamer(digimon_t* list[], int length, char* name_tamer)
     int sum_health = 0;
 
     for (int i = 0; i < length; ++i) {
-        if (list[i]->name_tamer == name_tamer) {
+        if (valami strcmp(list[i]->name_tamer, name_tamer)) {
             counter++;
             sum_health += list[i]->health;
         }
@@ -144,10 +145,12 @@ int main()
     digimon_t* digimons[] = {&dig1, &dig2, &dig3, &dig4};
     int length_digimons = sizeof(digimons) / sizeof(digimons[0]);
 
+    char test[] = {'J', 'o', 'h', 'n'};
+
     printf("The index of the digimon with less health: %d\n", get_minimum_health(digimons, length_digimons));
     printf("The number of digimons on the level of Ultimate: %d\n", get_digim_same_level(digimons, length_digimons, ULTIMATE));
     printf("The number of digimons of the same tamer: %d\n", get_same_tamer(digimons, length_digimons, "John"));
-    printf("The average health of digimons of the same tamer: %.2f\n", average_health_by_tamer(digimons, length_digimons, "John"));
+    printf("The average health of digimons of the same tamer: %.2f\n", average_health_by_tamer(digimons, length_digimons, test));
 
     return 0;
 }
