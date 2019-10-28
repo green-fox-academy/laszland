@@ -9,12 +9,33 @@
 int main()
 {
     int* pointer = NULL;
+
+    // - - - MALLOC - - - //
     pointer = (int*)malloc(10 * sizeof(int));
 
     for (int i = 0; i < 5; i++) {
         *(pointer + i) = i;
+    }
+
+    for (int i = 0; i < 10; i++) {
         printf("%d, ", *(pointer + i));
     }
+    printf("\n"),
+
+    free(pointer);
+
+
+    // - - - CALLOC - - - ///
+    pointer = (int*)calloc(10, sizeof(int));
+
+    for (int i = 0; i < 5; i++) {
+        *(pointer + i) = i;
+    }
+
+    for (int i = 0; i < 10; i++) {
+        printf("%d, ", *(pointer + i));
+    }
+    printf("\n");
 
     free(pointer);
 
