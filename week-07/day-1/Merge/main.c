@@ -69,6 +69,6 @@ int main()
 
     free(even_ptr);
     free(odd_ptr);
-    
+
     return 0;
 }
