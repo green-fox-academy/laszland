@@ -69,6 +69,8 @@ int main() {
         printf("The index of the value: %d\n", temp_index);
     }
 
+    shuffle(&test_vector);
+    print(test_vector, &error);
 
     destroy(&test_vector, &error);
     return 0;
