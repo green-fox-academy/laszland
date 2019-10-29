@@ -31,9 +31,8 @@ int get_capacity(vector_t* vec);
 void decrease_capacity(vector_t* vec);
 int is_empty(vector_t* vec);
 void delete_by_index(vector_t* vec, int index, error_t* error);
+int search_by_value(vector_t* vec, int value);
 
-
-// todo: delete by index
 // todo: search
 // todo: shuffle
 // todo: unique value

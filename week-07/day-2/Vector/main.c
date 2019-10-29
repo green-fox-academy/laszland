@@ -60,8 +60,16 @@ int main() {
     print(test_vector, &error);
     printf("The size of the vector: %d\n" , get_size(&test_vector));
 
+
+    int temp_index = search_by_value(&test_vector, 12);
+
+    if (temp_index == -1) {
+        printf("Element is not found.\n");
+    } else if (temp_index >= 0){
+        printf("The index of the value: %d\n", temp_index);
+    }
+
+
     destroy(&test_vector, &error);
-
-
     return 0;
 }

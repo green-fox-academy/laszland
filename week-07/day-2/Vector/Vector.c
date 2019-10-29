@@ -150,3 +150,14 @@ void delete_by_index(vector_t* vec, int index, error_t* error)
     }
     vec->size--;
 }
+
+int search_by_value(vector_t* vec, int value)
+{
+    int index_found = -1;
+    for (int i = 0; i < vec->size; ++i) {
+        if (vec->data[i] == value) {
+            index_found = i;
+        }
+    }
+    return index_found;
+}
