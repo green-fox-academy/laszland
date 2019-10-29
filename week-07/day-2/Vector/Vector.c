@@ -21,7 +21,7 @@ void push_back(vector_t* vec, int new_data, error_t* error)
 {
     *error = NO_ERROR;
     if (vec->size >= vec->capacity) {
-        vec->capacity *= 2;
+        expand_capacity(vec);
     }
 
     vec->data[vec->size] = new_data;
@@ -48,7 +48,7 @@ void pop_back(vector_t* vec, error_t* error)
     }
     vec->size--;
     if (vec->size == (vec->capacity / 2)) {
-        vec->capacity = vec->size;
+        decrease_capacity(vec);
     }
 }
 
@@ -89,3 +89,49 @@ int ask_new_index(vector_t* vec)
     return element_at(vec, temp);
 }
 */
+
+void insert_after(vector_t* vec, int index, int new_data, error_t* error)
+{
+    *error = NO_ERROR;
+    if (index < 0 || index > vec->size) {
+        *error = INVALID_INDEX;
+        return;
+    }
+    vec->size++;
+    if (vec->size > vec->capacity)
+        expand_capacity(vec);
+    for (int i = vec->size - 1; i >= 0; --i) {
+        if (i > (index + 1)) {
+            vec->data[i + 1] = vec->data[i];
+        } else if (i == index + 1) {
+            vec->data[i + 1] = vec->data[i];
+            vec->data[index + 1] = new_data;
+        }
+    }
+}
+
+void expand_capacity(vector_t* vec)
+{
+    vec->capacity *= 2;
+}
+
+int get_size(vector_t* vec)
+{
+    return vec->size;
+}
+
+int get_capacity(vector_t* vec)
+{
+    return vec->capacity;
+}
+
+void decrease_capacity(vector_t* vec)
+{
+    vec->capacity = vec->size;
+}
+
+int is_empty(vector_t* vec)
+{
+    if(vec->size) return 0;
+    return 1;
+}

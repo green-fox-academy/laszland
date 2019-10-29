@@ -24,6 +24,21 @@ void print(vector_t vec, error_t* error);
 void pop_back(vector_t* vec, error_t* error);
 void destroy(vector_t* vec, error_t* error);
 //int ask_new_index(vector_t* vec);
+void insert_after(vector_t* vec, int index, int new_data, error_t* error);
+void expand_capacity(vector_t* vec);
+int get_size(vector_t* vec);
+int get_capacity(vector_t* vec);
+void decrease_capacity(vector_t* vec);
+int is_empty(vector_t* vec);
+
+
+// todo: delete by index
+// todo: search
+// todo: shuffle
+// todo: unique value
+// todo: transform
+
+
 
 #endif //VECTOR_VECTOR_H
 
