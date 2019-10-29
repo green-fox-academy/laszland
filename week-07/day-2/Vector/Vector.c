@@ -192,3 +192,15 @@ void find_unique_values(vector_t* vec, error_t* error)
         }
     }
 }
+
+void multiply_value(int* value)
+{
+    *value *= 2;
+}
+
+void transform(vector_t* vec, (*funk_ptr)(vector_t* vec))
+{
+    for (int i = 0; i < vec->size; ++i) {
+        (*funk_ptr)(vec->data[i]);
+    }
+}
