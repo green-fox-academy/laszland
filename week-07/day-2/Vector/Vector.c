@@ -93,7 +93,7 @@ int ask_new_index(vector_t* vec)
 void insert_after(vector_t* vec, int index, int new_data, error_t* error)
 {
     *error = NO_ERROR;
-    if (index < 0 || index > vec->size) {
+    if (index < 0 || index > vec->size - 1) {
         *error = INVALID_INDEX;
         return;
     }
@@ -134,4 +134,19 @@ int is_empty(vector_t* vec)
 {
     if(vec->size) return 0;
     return 1;
+}
+
+void delete_by_index(vector_t* vec, int index, error_t* error)
+{
+    *error = NO_ERROR;
+    if (index < 0 || index > vec->size - 1) {
+        *error = INVALID_INDEX;
+    }
+
+    for (int i = 0; i < vec->size; ++i) {
+        if (i >= index) {
+            vec->data[i] = vec->data[i + 1];
+        }
+    }
+    vec->size--;
 }

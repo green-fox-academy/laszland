@@ -30,6 +30,7 @@ int get_size(vector_t* vec);
 int get_capacity(vector_t* vec);
 void decrease_capacity(vector_t* vec);
 int is_empty(vector_t* vec);
+void delete_by_index(vector_t* vec, int index, error_t* error);
 
 
 // todo: delete by index

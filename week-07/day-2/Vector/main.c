@@ -56,6 +56,10 @@ int main() {
     printf("The size of the vector: %d\n" , get_size(&test_vector));
     printf("The capacity of the vector: %d\n" , get_capacity(&test_vector));
 
+    delete_by_index(&test_vector, 1, &error);
+    print(test_vector, &error);
+    printf("The size of the vector: %d\n" , get_size(&test_vector));
+
     destroy(&test_vector, &error);
 
 
