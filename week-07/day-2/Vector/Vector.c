@@ -2,11 +2,13 @@
 
 
 
-void init(vector_t* vec, int capacity)
+void init(vector_t* vec, int capacity, error_t* error)
 {
+    *error = NO_ERROR;
     if (capacity <= 0) {
-        printf("ERROR: Invalid value for capacity. Default value (3) set up.\n");
-        init(vec, 3);
+        //printf("ERROR: Invalid value for capacity. Default value (3) set up.\n");
+        //init(vec, 3);
+        *error = EMPTY;
         return;
     }
     vec->data = (int*)calloc(capacity, sizeof(int));
@@ -15,8 +17,9 @@ void init(vector_t* vec, int capacity)
 }
 
 
-void push_back(vector_t* vec, int new_data)
+void push_back(vector_t* vec, int new_data, error_t* error)
 {
+    *error = NO_ERROR;
     if (vec->size >= vec->capacity) {
         vec->capacity *= 2;
     }
@@ -26,10 +29,12 @@ void push_back(vector_t* vec, int new_data)
 }
 
 
-int element_at(vector_t* vec, int index)
+int element_at(vector_t* vec, int index, error_t* error)
 {
+    *error = NO_ERROR;
     if (index > vec->size - 1 || index < 0) {
-        return  ask_new_index(vec);
+        //return  ask_new_index(vec);
+        *error = OUT_OF_BOUNDS;
     }
     return vec->data[index];
 }
@@ -38,6 +43,9 @@ int element_at(vector_t* vec, int index)
 void pop_back(vector_t* vec, error_t* error)
 {
     *error = NO_ERROR;
+    if(vec->size == 0) {
+        *error = INVALID_INDEX;
+    }
     vec->size--;
     if (vec->size == (vec->capacity / 2)) {
         vec->capacity = vec->size;
@@ -72,6 +80,7 @@ void destroy(vector_t* vec, error_t* error)
     free(vec->data);
 }
 
+/*
 int ask_new_index(vector_t* vec)
 {
     int temp = 0;
@@ -79,3 +88,4 @@ int ask_new_index(vector_t* vec)
     scanf("%d", &temp);
     return element_at(vec, temp);
 }
+*/
