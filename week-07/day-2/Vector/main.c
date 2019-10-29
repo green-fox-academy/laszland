@@ -46,12 +46,12 @@ int main() {
 
     insert_after(&test_vector, 4, 12, &error);
     print(test_vector, &error);
-    insert_after(&test_vector, -2, 12, &error);
+    insert_after(&test_vector, 4, 12, &error);
     if (error) {
         printf("ERROR: Invalid index.\n");
     }
-    insert_after(&test_vector, 0, 12, &error);
-    insert_after(&test_vector, 6, 12, &error);
+    insert_after(&test_vector, 4, 12, &error);
+    insert_after(&test_vector, 4, 12, &error);
     print(test_vector, &error);
     printf("The size of the vector: %d\n" , get_size(&test_vector));
     printf("The capacity of the vector: %d\n" , get_capacity(&test_vector));
@@ -70,6 +70,9 @@ int main() {
     }
 
     shuffle(&test_vector);
+    print(test_vector, &error);
+
+    find_unique_values(&test_vector, &error);
     print(test_vector, &error);
 
     destroy(&test_vector, &error);

@@ -179,3 +179,16 @@ void swap_elements(int *a, int *b)
     *a = *b;
     *b = temp;
 }
+
+void find_unique_values(vector_t* vec, error_t* error)
+{
+    for (int i = 0; i < vec->size; ++i) {
+        for (int j = i + 1; j < vec->size; ++j) {
+            if (vec->data[i] == vec->data[j]) {
+                delete_by_index(vec, j, error);
+                j--;
+
+            }
+        }
+    }
+}

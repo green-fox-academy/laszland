@@ -34,10 +34,9 @@ void delete_by_index(vector_t* vec, int index, error_t* error);
 int search_by_value(vector_t* vec, int value);
 void shuffle(vector_t* vec);
 void swap_elements(int* a, int* b);
+void find_unique_values(vector_t* vec, error_t* error);
 
 
-// todo: shuffle
-// todo: unique value
 // todo: transform
 
 
