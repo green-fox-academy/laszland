@@ -98,12 +98,14 @@ void delete_by_value(node_t **head, int value)
     node_t* current = *head;
     node_t* previous_node;
 
+    // check the head
     if(current != NULL && current->data == value) {
         *head = current->next;
         free(current);
         return;
     }
 
+    // check the other nodes and delete it
     while(current != NULL && current->data != value) {
         previous_node = current;
         current = current->next;
@@ -111,4 +113,23 @@ void delete_by_value(node_t **head, int value)
     if(current == NULL) return;
     previous_node->next = current->next;
     free(current);
+}
+
+
+node_t* search_by_value(node_t* head, int value)
+{
+    node_t* current = head;
+    node_t* previous_node;
+
+    // check the head
+    if(current != NULL && current->data == value) {
+        return head;
+    }
+
+    while(current != NULL && current->data != value) {
+        previous_node = current;
+        current = current->next;
+    }
+    return previous_node->next;
+    if(current == NULL) return NULL;
 }

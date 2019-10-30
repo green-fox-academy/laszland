@@ -44,7 +44,11 @@ int main() {
     delete_by_value(&head, 123);
     print_all_elements(head);
     delete_by_value(&head, 12);
+    delete_by_value(&head, 999);
     print_all_elements(head);
+
+    printf("%p\n", search_by_value(head, 10));
+    printf("%p\n", head->next);
 
 
 
