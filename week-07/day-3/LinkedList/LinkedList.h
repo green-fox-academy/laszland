@@ -11,8 +11,7 @@ typedef struct node {
 
 node_t* create_node(int new_data);
 void push_back(node_t* head, int new_data);
-void set_up_tail(node_t* node);
-void set_up_next(node_t* previous_node, node_t* new_node);
+
 
 
 #endif //LINKEDLIST_LINKEDLIST_H

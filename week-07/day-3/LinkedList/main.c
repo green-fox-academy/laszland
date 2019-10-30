@@ -7,12 +7,13 @@ int main() {
 
     node_t* head = create_node(5);
     printf("%p\n", head);
+    printf("%p\n", head->next);
 
-    push_back(&head, 10);
+    push_back(head, 10);
+    printf("%p\n", head->next);
+    push_back(head, 11);
+    printf("%p\n", head->next);
 
-    while (head->next != 0) {
-        printf("node %p : next %p \n", &head, head->next);
-    }
 
     return 0;
 }

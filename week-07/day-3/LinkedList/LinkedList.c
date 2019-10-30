@@ -10,20 +10,12 @@ node_t* create_node(int new_data)
 
 void push_back(node_t* head, int new_data)
 {
-    while(head->next != 0)
-        head->next = (head->next)->next;
-    head->next = create_node(new_data);
-    return;
-}
-
-void set_up_tail(node_t* node)
-{
-    node->next = NULL;
-}
-
-void set_up_next(node_t* previous_node, node_t* new_node)
-{
-    if (!previous_node) return;
-    previous_node->next = new_node;
+    node_t* current = head;
+    while(current->next != 0) {
+        current = current->next;
+    }
+    current->next = (node_t*)malloc(sizeof(node_t));
+    current->next->next = NULL;
+    current->next->data = new_data;
 }
 
