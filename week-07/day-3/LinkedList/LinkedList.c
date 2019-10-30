@@ -57,3 +57,20 @@ int get_size(node_t* head)
     }
     return counter;
 }
+
+
+void insert_after(node_t* head, int index, int new_data)
+{
+    int counter = 0;
+    node_t* current = head;
+    while(current->next != 0){
+        counter++;
+        current = current->next;
+        if (counter == (index)) {
+            node_t* new_node = (node_t*)malloc(sizeof(node_t));
+            new_node->data = new_data;
+            new_node->next = current->next;
+            current->next = new_node;
+        }
+    }
+}

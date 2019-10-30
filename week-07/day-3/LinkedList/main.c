@@ -25,6 +25,9 @@ int main() {
 
     printf("The size of the list: %d\n", get_size(head));
 
+    insert_after(head, 4, 123);
+    print_all_elements(head);
+
 
 
     return 0;
