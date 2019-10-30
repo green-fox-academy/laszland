@@ -19,3 +19,16 @@ void push_back(node_t* head, int new_data)
     current->next->data = new_data;
 }
 
+void print_all_elements(node_t* head)
+{
+    printf("{ ");
+    node_t* current = head;
+    while(current->next != 0) {
+        printf("%d", current->data);
+        printf(", ");
+        current = current->next;
+    }
+    if (current->next == NULL) {
+        printf("%d }\n", current->data);
+    }
+}

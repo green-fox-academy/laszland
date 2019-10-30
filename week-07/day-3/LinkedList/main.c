@@ -12,7 +12,11 @@ int main() {
     push_back(head, 10);
     printf("%p\n", head->next);
     push_back(head, 11);
+    push_back(head, 65);
+    push_back(head, 196);
     printf("%p\n", head->next);
+
+    print_all_elements(head);
 
 
     return 0;
