@@ -1,5 +1,7 @@
 #include "LinkedList.h"
 
+
+
 node_t* create_node(int new_data)
 {
     node_t* new_node = (node_t*)malloc(sizeof(node_t));
@@ -7,6 +9,7 @@ node_t* create_node(int new_data)
     new_node->next = NULL;
     return new_node;
 }
+
 
 void push_back(node_t* head, int new_data)
 {
@@ -18,6 +21,7 @@ void push_back(node_t* head, int new_data)
     current->next->next = NULL;
     current->next->data = new_data;
 }
+
 
 void print_all_elements(node_t* head)
 {
@@ -33,10 +37,23 @@ void print_all_elements(node_t* head)
     }
 }
 
+
 void push_front(node_t** head, int new_data)
 {
     node_t* new_node = (node_t*)malloc(sizeof(node_t));
     new_node->data = new_data;
     new_node->next = (*head);
     (*head) = new_node;
+}
+
+
+int get_size(node_t* head)
+{
+    int counter = 1;
+    node_t* current = head;
+    while(current->next != 0){
+        counter++;
+        current = current->next;
+    }
+    return counter;
 }
