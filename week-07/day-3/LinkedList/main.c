@@ -41,6 +41,11 @@ int main() {
     print_all_elements(head);
     printf("The size of the list: %d\n", get_size(head));
 
+    delete_by_value(&head, 123);
+    print_all_elements(head);
+    delete_by_value(&head, 12);
+    print_all_elements(head);
+
 
 
 

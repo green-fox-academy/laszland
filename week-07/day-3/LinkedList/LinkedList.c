@@ -91,3 +91,24 @@ void delete_front(node_t** head)
     (*head) = (*head)->next;
     free(temp);
 }
+
+
+void delete_by_value(node_t **head, int value)
+{
+    node_t* current = *head;
+    node_t* previous_node;
+
+    if(current != NULL && current->data == value) {
+        *head = current->next;
+        free(current);
+        return;
+    }
+
+    while(current != NULL && current->data != value) {
+        previous_node = current;
+        current = current->next;
+    }
+    if(current == NULL) return;
+    previous_node->next = current->next;
+    free(current);
+}

@@ -17,6 +17,7 @@ int get_size(node_t* head);
 void insert_after(node_t* head, int index, int new_data);
 int empty(node_t* head);
 void delete_front(node_t** head);
+void delete_by_value(node_t **head, int value);
 
 
 #endif //LINKEDLIST_LINKEDLIST_H
