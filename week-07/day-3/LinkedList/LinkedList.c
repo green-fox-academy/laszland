@@ -32,3 +32,11 @@ void print_all_elements(node_t* head)
         printf("%d }\n", current->data);
     }
 }
+
+void push_front(node_t** head, int new_data)
+{
+    node_t* new_node = (node_t*)malloc(sizeof(node_t));
+    new_node->data = new_data;
+    new_node->next = (*head);
+    (*head) = new_node;
+}

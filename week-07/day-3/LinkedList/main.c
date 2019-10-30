@@ -18,6 +18,12 @@ int main() {
 
     print_all_elements(head);
 
+    push_front(&head, 12);
+    push_front(&head, 78);
+
+    print_all_elements(head);
+
+
 
     return 0;
 }
