@@ -49,6 +49,8 @@ void push_front(node_t** head, int new_data)
 
 int get_size(node_t* head)
 {
+    if(empty(head)) return 0;
+
     int counter = 1;
     node_t* current = head;
     while(current->next != 0){
@@ -73,4 +75,11 @@ void insert_after(node_t* head, int index, int new_data)
             current->next = new_node;
         }
     }
+}
+
+
+int empty(node_t* head)
+{
+    if(head == NULL) return 1;
+    return 0;
 }

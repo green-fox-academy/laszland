@@ -28,6 +28,14 @@ int main() {
     insert_after(head, 4, 123);
     print_all_elements(head);
 
+    if (empty(head))
+        printf("The list is empty");
+    else {
+        printf("The list is not empty.\n");
+        print_all_elements(head);
+    }
+
+
 
 
     return 0;
