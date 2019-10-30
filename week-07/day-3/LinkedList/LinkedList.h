@@ -19,6 +19,8 @@ int empty(node_t* head);
 void delete_front(node_t** head);
 void delete_by_value(node_t **head, int value);
 node_t* search_by_value(node_t* head, int value);
+void bubble_sort(node_t* head);
+void swap(node_t* a, node_t* b);
 
 
 #endif //LINKEDLIST_LINKEDLIST_H

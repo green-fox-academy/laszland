@@ -119,17 +119,46 @@ void delete_by_value(node_t **head, int value)
 node_t* search_by_value(node_t* head, int value)
 {
     node_t* current = head;
-    node_t* previous_node;
 
-    // check the head
     if(current != NULL && current->data == value) {
         return head;
     }
 
     while(current != NULL && current->data != value) {
-        previous_node = current;
         current = current->next;
     }
-    return previous_node->next;
-    if(current == NULL) return NULL;
+    return current;
+}
+
+
+void bubble_sort(node_t* head)
+{
+    int swapped;
+    node_t *ptr1;
+    node_t *lptr = NULL;
+
+    if(head == NULL) return;
+
+    do {
+        swapped = 0;
+        ptr1 = head;
+
+        while(ptr1->next != lptr) {
+            if (ptr1->data > ptr1->next->data) {
+                swap(ptr1, ptr1->next);
+                swapped = 1;
+            }
+            ptr1 = ptr1->next;
+        }
+        lptr = ptr1;
+    }
+    while (swapped);
+}
+
+
+void swap(node_t* a, node_t* b)
+{
+    int temp = a->data;
+    a->data = b->data;
+    b->data = temp;
 }

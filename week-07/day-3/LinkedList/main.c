@@ -47,10 +47,12 @@ int main() {
     delete_by_value(&head, 999);
     print_all_elements(head);
 
-    printf("%p\n", search_by_value(head, 10));
-    printf("%p\n", head->next);
+    printf("%p\n", search_by_value(head, 11));
+    printf("%p\n", head->next->next);
+    printf("%p\n", search_by_value(head, 9999));
 
-
+    bubble_sort(head);
+    print_all_elements(head);
 
 
     return 0;
