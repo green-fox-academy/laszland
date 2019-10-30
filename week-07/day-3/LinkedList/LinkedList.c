@@ -83,3 +83,11 @@ int empty(node_t* head)
     if(head == NULL) return 1;
     return 0;
 }
+
+
+void delete_front(node_t** head)
+{
+    node_t* temp = *head;
+    (*head) = (*head)->next;
+    free(temp);
+}
