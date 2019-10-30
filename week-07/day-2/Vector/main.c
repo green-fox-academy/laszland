@@ -75,9 +75,9 @@ int main() {
     find_unique_values(&test_vector, &error);
     print(test_vector, &error);
 
-    int (*multiply_value_ptr)(vector_t* vec) = &multiply_value_ptr;
-    transform(&test_vector, (*multiply_value_ptr)(&test_vector));
-    print(test_vector, &error);
+    //int (*multiply_value_ptr)(vector_t* vec) = &multiply_value_ptr;
+    //transform(&test_vector, (*multiply_value_ptr)(&test_vector));
+    //print(test_vector, &error);
 
     destroy(&test_vector, &error);
     return 0;

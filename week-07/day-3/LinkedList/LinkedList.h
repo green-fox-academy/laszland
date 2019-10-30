@@ -1,0 +1,18 @@
+#ifndef LINKEDLIST_LINKEDLIST_H
+#define LINKEDLIST_LINKEDLIST_H
+
+#include <stdlib.h>
+#include <stdio.h>
+
+typedef struct node {
+    int data;
+    struct node* next;
+} node_t;
+
+node_t* create_node(int new_data);
+void push_back(node_t* head, int new_data);
+void set_up_tail(node_t* node);
+void set_up_next(node_t* previous_node, node_t* new_node);
+
+
+#endif //LINKEDLIST_LINKEDLIST_H

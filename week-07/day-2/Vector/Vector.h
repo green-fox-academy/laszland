@@ -36,7 +36,7 @@ void shuffle(vector_t* vec);
 void swap_elements(int* a, int* b);
 void find_unique_values(vector_t* vec, error_t* error);
 void multiply_value(int* value);
-void transform(vector_t* vec, (*funk_ptr)(vector_t* vec));
+//void transform(vector_t* vec, (*funk_ptr)(vector_t* vec));
 
 // todo: transform
 
