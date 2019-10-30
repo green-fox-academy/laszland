@@ -51,6 +51,13 @@ int main() {
     printf("%p\n", head->next->next);
     printf("%p\n", search_by_value(head, 9999));
 
+    push_front(&head, 78);
+    push_front(&head, 68);
+    push_front(&head, 49);
+    push_front(&head, 122);
+    push_front(&head, 17);
+    print_all_elements(head);
+
     bubble_sort(head);
     print_all_elements(head);
 

@@ -162,3 +162,9 @@ void swap(node_t* a, node_t* b)
     a->data = b->data;
     b->data = temp;
 }
+
+
+void insertion_sort(node_t* head)
+{
+    
+}
