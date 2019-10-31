@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 
 
@@ -27,12 +28,30 @@ void print_usage()
 }
 
 
+void get_size(char* path)
+{
+    FILE* fptr = NULL;
+    if (!(fptr = fopen(path, "rb"))) return;
+
+    char* read_data = (char*)malloc(6 * sizeof(char));
+    fread(read_data, sizeof(char), 6, fptr);
+
+    for (int i = 2; i < 6; ++i) {
+        printf("%d", read_data[i]);
+    }
+
+}
+
+
 
 
 int main(int argc, char* argv[]) {
     if(argc == 1) {
         print_usage();
     }
+
+    get_size("T.bmp");
+
 
     return 0;
 }
