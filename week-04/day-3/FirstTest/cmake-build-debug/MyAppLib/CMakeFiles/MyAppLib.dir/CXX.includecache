@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/peter/greenfox/laszland/week-04/day-3/FirstTest/MyAppLib/myClass.cpp
+myClass.h
+/Users/peter/greenfox/laszland/week-04/day-3/FirstTest/MyAppLib/myClass.h
+
+/Users/peter/greenfox/laszland/week-04/day-3/FirstTest/MyAppLib/myClass.h
+iostream
+-
+string
+-
+

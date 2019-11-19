@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/peter/greenfox/laszland/week-06/day-1/BasicOfC/main.c
+stdio.h
+-
+stdlib.h
+-
+pi.h
+/Users/peter/greenfox/laszland/week-06/day-1/BasicOfC/pi.h
+
+/Users/peter/greenfox/laszland/week-06/day-1/BasicOfC/pi.c
+pi.h
+/Users/peter/greenfox/laszland/week-06/day-1/BasicOfC/pi.h
+
+/Users/peter/greenfox/laszland/week-06/day-1/BasicOfC/pi.h
+

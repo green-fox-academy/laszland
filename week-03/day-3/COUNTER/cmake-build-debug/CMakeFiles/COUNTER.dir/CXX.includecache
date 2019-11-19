@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/peter/greenfox/laszland/week-03/day-3/COUNTER/Counter.cpp
+Counter.h
+/Users/peter/greenfox/laszland/week-03/day-3/COUNTER/Counter.h
+iostream
+-
+
+/Users/peter/greenfox/laszland/week-03/day-3/COUNTER/Counter.h
+iostream
+-
+

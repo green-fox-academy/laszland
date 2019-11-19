@@ -1,0 +1,3 @@
+/Users/peter/greenfox/laszland/week-04/day-1/Garden/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/peter/greenfox/laszland/week-04/day-1/Garden/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/peter/greenfox/laszland/week-04/day-1/Garden/cmake-build-debug/CMakeFiles/Garden.dir

@@ -1,0 +1,980 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="drawing_setup"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="triangle">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/triangle" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 triangle"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="triangle/fast">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/triangle" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 triangle/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="chessBoard">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/chessBoard" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 chessBoard"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="chessBoard/fast">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/chessBoard" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 chessBoard/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="envelopeStar">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/envelopeStar" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 envelopeStar"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="envelopeStar/fast">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/envelopeStar" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 envelopeStar/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="funktionToCenter">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/funktionToCenter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 funktionToCenter"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="funktionToCenter/fast">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/funktionToCenter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 funktionToCenter/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="purpleSteps">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/purpleSteps" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 purpleSteps"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="purpleSteps/fast">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/purpleSteps" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 purpleSteps/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="centeredBoxes">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/centeredBoxes" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 centeredBoxes"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="centeredBoxes/fast">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/centeredBoxes" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 centeredBoxes/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fourRectangles">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/fourRectangles" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 fourRectangles"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="fourRectangles/fast">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/fourRectangles" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 fourRectangles/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="purple3d">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/purple3d" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 purple3d"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="purple3d/fast">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/purple3d" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 purple3d/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="squareCenter">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/squareCenter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 squareCenter"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="squareCenter/fast">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/squareCenter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 squareCenter/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="horizontalLines">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/horizontalLines" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 horizontalLines"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="horizontalLines/fast">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/horizontalLines" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 horizontalLines/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="coloredBox">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/coloredBox" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 coloredBox"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="coloredBox/fast">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/coloredBox" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 coloredBox/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="goToCenter">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/goToCenter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 goToCenter"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="goToCenter/fast">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/goToCenter" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 goToCenter/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="positionSquare">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/positionSquare" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 positionSquare"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="positionSquare/fast">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/positionSquare" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 positionSquare/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="diagonals">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/diagonals" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 diagonals"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="diagonals/fast">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/diagonals" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 diagonals/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="linePlay">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/linePlay" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 linePlay"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="linePlay/fast">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/linePlay" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 linePlay/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rainbowBoxes">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/rainbowBoxes" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 rainbowBoxes"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rainbowBoxes/fast">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/rainbowBoxes" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 rainbowBoxes/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="draw">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/draw" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 draw"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="draw/fast">
+				<Option output="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/draw" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Frameworks/SDL2.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_image.framework/Headers"/>
+					<Add directory="/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/peter/greenfox/SDL2_plugins/SDL2_plugins/gfx/inc"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 draw/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/centeredBoxes.cpp">
+			<Option target="centeredBoxes"/>
+		</Unit>
+		<Unit filename="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/chessBoard.cpp">
+			<Option target="chessBoard"/>
+		</Unit>
+		<Unit filename="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/coloredBox.cpp">
+			<Option target="coloredBox"/>
+		</Unit>
+		<Unit filename="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/diagonals.cpp">
+			<Option target="diagonals"/>
+		</Unit>
+		<Unit filename="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/draw.cpp">
+			<Option target="draw"/>
+		</Unit>
+		<Unit filename="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/draw.h">
+			<Option target="draw"/>
+		</Unit>
+		<Unit filename="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/envelopeStar.cpp">
+			<Option target="envelopeStar"/>
+		</Unit>
+		<Unit filename="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/fourRectangles.cpp">
+			<Option target="fourRectangles"/>
+		</Unit>
+		<Unit filename="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/funktionToCenter.cpp">
+			<Option target="funktionToCenter"/>
+		</Unit>
+		<Unit filename="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/goToCenter.cpp">
+			<Option target="goToCenter"/>
+		</Unit>
+		<Unit filename="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/horizontalLines.cpp">
+			<Option target="horizontalLines"/>
+		</Unit>
+		<Unit filename="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/linePlay.cpp">
+			<Option target="linePlay"/>
+		</Unit>
+		<Unit filename="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/main.cpp">
+			<Option target="triangle"/>
+			<Option target="chessBoard"/>
+			<Option target="envelopeStar"/>
+			<Option target="funktionToCenter"/>
+			<Option target="purpleSteps"/>
+			<Option target="centeredBoxes"/>
+			<Option target="fourRectangles"/>
+			<Option target="purple3d"/>
+			<Option target="squareCenter"/>
+			<Option target="horizontalLines"/>
+			<Option target="coloredBox"/>
+			<Option target="goToCenter"/>
+			<Option target="positionSquare"/>
+			<Option target="diagonals"/>
+			<Option target="linePlay"/>
+			<Option target="rainbowBoxes"/>
+			<Option target="draw"/>
+		</Unit>
+		<Unit filename="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/positionSquare.cpp">
+			<Option target="positionSquare"/>
+		</Unit>
+		<Unit filename="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/purple3d.cpp">
+			<Option target="purple3d"/>
+		</Unit>
+		<Unit filename="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/purpleSteps.cpp">
+			<Option target="purpleSteps"/>
+		</Unit>
+		<Unit filename="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/rainbowBoxes.cpp">
+			<Option target="rainbowBoxes"/>
+		</Unit>
+		<Unit filename="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/squareCenter.cpp">
+			<Option target="squareCenter"/>
+		</Unit>
+		<Unit filename="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/triangle.cpp">
+			<Option target="triangle"/>
+		</Unit>
+		<Unit filename="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake/FindSDL2.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake/FindSDL2_all.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake/FindSDL2_image.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+		<Unit filename="/Users/peter/greenfox/laszland/week-02/day-3/drawing_setup/cmake/FindSDL2_ttf.cmake">
+			<Option virtualFolder="CMake Files\cmake\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

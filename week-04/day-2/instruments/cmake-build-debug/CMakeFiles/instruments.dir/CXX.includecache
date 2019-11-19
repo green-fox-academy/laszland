@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/peter/greenfox/laszland/week-04/day-2/instruments/ElectricGuitar.cpp
+ElectricGuitar.h
+/Users/peter/greenfox/laszland/week-04/day-2/instruments/ElectricGuitar.h
+
+/Users/peter/greenfox/laszland/week-04/day-2/instruments/ElectricGuitar.h
+StringedInstrument.h
+/Users/peter/greenfox/laszland/week-04/day-2/instruments/StringedInstrument.h
+
+/Users/peter/greenfox/laszland/week-04/day-2/instruments/Instrument.h
+iostream
+-
+
+/Users/peter/greenfox/laszland/week-04/day-2/instruments/StringedInstrument.cpp
+StringedInstrument.h
+/Users/peter/greenfox/laszland/week-04/day-2/instruments/StringedInstrument.h
+
+/Users/peter/greenfox/laszland/week-04/day-2/instruments/StringedInstrument.h
+Instrument.h
+/Users/peter/greenfox/laszland/week-04/day-2/instruments/Instrument.h
+

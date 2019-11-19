@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/peter/greenfox/laszland/week-03/day-4/DiceSet/DiceSet.h
+iostream
+-
+vector
+-
+
+/Users/peter/greenfox/laszland/week-03/day-4/DiceSet/main.cpp
+iostream
+-
+DiceSet.h
+/Users/peter/greenfox/laszland/week-03/day-4/DiceSet/DiceSet.h
+

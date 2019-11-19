@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/peter/greenfox/laszland/week-05/day-3/Testing/MyApp_lib/Extension.cpp
+Extension.h
+/Users/peter/greenfox/laszland/week-05/day-3/Testing/MyApp_lib/Extension.h
+algorithm
+-
+sstream
+-
+
+/Users/peter/greenfox/laszland/week-05/day-3/Testing/MyApp_lib/Extension.h
+string
+-
+vector
+-
+
