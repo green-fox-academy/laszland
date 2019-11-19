@@ -105,7 +105,7 @@ float average_health_by_tamer(digimon_t* list[], int length, char* name_tamer)
     int sum_health = 0;
 
     for (int i = 0; i < length; ++i) {
-        if (valami strcmp(list[i]->name_tamer, name_tamer)) {
+        if (strcmp(list[i]->name_tamer, name_tamer)) {
             counter++;
             sum_health += list[i]->health;
         }
