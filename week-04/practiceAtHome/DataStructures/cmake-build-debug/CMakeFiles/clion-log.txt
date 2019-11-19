@@ -1,4 +1,0 @@
-/private/var/folders/xv/m9tm7qpd7t5ff6j0zcqbf1sm0000gn/T/AppTranslocation/A41F7996-8138-4240-BA88-E35F04F05600/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/peter/greenfox/laszland/week-04/practiceAtHome/DataStructures
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/peter/greenfox/laszland/week-04/practiceAtHome/DataStructures/cmake-build-debug

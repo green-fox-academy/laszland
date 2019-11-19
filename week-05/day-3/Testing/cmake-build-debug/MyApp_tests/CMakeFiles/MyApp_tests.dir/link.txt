@@ -1,1 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/MyApp_tests.dir/ExtensionTest.cpp.o  -o MyApp_tests ../lib/libgtestd.a ../lib/libgtest_maind.a ../MyApp_lib/libMyApp_lib.a ../lib/libgtestd.a 

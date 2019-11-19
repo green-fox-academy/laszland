@@ -1,1 +1,0 @@
-add_library(${PROJECT_LIB_NAME} apple.cpp Extension.cpp Extension.h)

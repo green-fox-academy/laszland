@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libMyApp_lib.a  CMakeFiles/MyApp_lib.dir/apple.cpp.o CMakeFiles/MyApp_lib.dir/Extension.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libMyApp_lib.a

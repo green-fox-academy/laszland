@@ -1,3 +1,0 @@
-/Users/peter/greenfox/laszland/week-02/day-1/PERSONAL FINANCE/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/peter/greenfox/laszland/week-02/day-1/PERSONAL FINANCE/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/peter/greenfox/laszland/week-02/day-1/PERSONAL FINANCE/cmake-build-debug/CMakeFiles/PERSONAL_FINANCE.dir

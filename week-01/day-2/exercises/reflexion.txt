@@ -1,3 +1,0 @@
-Hi, this is my reflexion on the day. So, today we were busy with Command Line and Git. First one is not that complicated, second one is a bit mess to me, but I hope that I will understand it.
-
-Now I write an other line to this file in order to check there is something to push.

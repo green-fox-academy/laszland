@@ -1,3 +1,0 @@
-/Users/peter/greenfox/laszland/week-05/day-2/ElementFinder/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/peter/greenfox/laszland/week-05/day-2/ElementFinder/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/peter/greenfox/laszland/week-05/day-2/ElementFinder/cmake-build-debug/CMakeFiles/ElementFinder.dir

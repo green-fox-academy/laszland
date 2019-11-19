@@ -1,5 +1,0 @@
-birch green 50 male
-cherry green 45 female
-dogwood red 87 male
-elder purple 32 male
-holy yellow 122 female

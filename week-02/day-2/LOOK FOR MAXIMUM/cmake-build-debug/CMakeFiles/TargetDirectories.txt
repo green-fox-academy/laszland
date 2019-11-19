@@ -1,3 +1,0 @@
-/Users/peter/greenfox/laszland/week-02/day-2/LOOK FOR MAXIMUM/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/peter/greenfox/laszland/week-02/day-2/LOOK FOR MAXIMUM/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/peter/greenfox/laszland/week-02/day-2/LOOK FOR MAXIMUM/cmake-build-debug/CMakeFiles/LOOK_FOR_MAXIMUM.dir

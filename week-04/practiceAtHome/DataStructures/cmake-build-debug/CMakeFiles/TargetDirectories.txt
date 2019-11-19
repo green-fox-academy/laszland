@@ -1,3 +1,0 @@
-/Users/peter/greenfox/laszland/week-04/practiceAtHome/DataStructures/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/peter/greenfox/laszland/week-04/practiceAtHome/DataStructures/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/peter/greenfox/laszland/week-04/practiceAtHome/DataStructures/cmake-build-debug/CMakeFiles/DataStructures.dir
