@@ -7,3 +7,7 @@
 void game::setNumberOfPlayers(int numberOfPlayers) {
     _numberOfPlayers = numberOfPlayers;
 }
+
+int game::getNumberOfPlayers() const {
+    return _numberOfPlayers;
+}

@@ -15,6 +15,10 @@ public:
     void threwPoint(int target);
 
     const std::string &getName() const;
+    int getPoint() const;
+
+    bool isTheWinner();
+    bool isOverflow();
 
 private:
     std::string _name;

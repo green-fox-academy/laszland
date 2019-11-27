@@ -11,3 +11,15 @@ const std::string &player::getName() const {
     return _name;
 }
 
+int player::getPoint() const {
+    return _point;
+}
+
+bool player::isTheWinner() {
+    return (_point == 0) ? true : false;
+}
+
+bool player::isOverflow() {
+    return (_point < 0) ? true : false;
+}
+
