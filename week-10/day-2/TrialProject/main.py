@@ -4,9 +4,8 @@ import pandas as pd
 import numpy as np
 
 df = pd.read_csv('Popular_Baby_Names.csv')
-#print(df.head(10))
-
-name_for_search = 'Robert'
+print(df)
+name_for_search = "robert"
 
 dic = {
     2011: 0,
@@ -17,11 +16,9 @@ dic = {
     2016: 0,
 }
 
-df_maria = df[df["Child's First Name"] == name_for_search]
-print(df_maria)
-#plt.scatter(df_maria['Year of Birth'], df_maria['Count'])
-#plt.show()
-for tuples in df_maria.itertuples():
+df_filtered = df[df["Child's First Name"].str.lower() == name_for_search.casefold()]
+print(df_filtered)
+for tuples in df_filtered.itertuples():
     print(tuples)
     if tuples[1] == 2011:
         dic[2011] += tuples[5]
@@ -40,7 +37,7 @@ print(dic)
 final_data = sorted(dic.items())
 x, y = zip(*final_data)
 plt.bar(x, y)
-plt.title('Frequency between 2011 - 2016')
+plt.title('Frequency between ' + name_for_search + ' 2011 - 2016')
 plt.ylabel('frequency')
 plt.xlabel('years')
 plt.show()
