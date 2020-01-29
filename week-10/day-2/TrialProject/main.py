@@ -1,11 +1,10 @@
 import matplotlib.pyplot as plt
-import matplotlib.style as style
+import matplotlib.animation as animation
 import pandas as pd
 import numpy as np
 
 df = pd.read_csv('Popular_Baby_Names.csv')
-print(df)
-name_for_search = "robert"
+name_for_search = input("Type a name: ")
 
 dic = {
     2011: 0,
@@ -37,7 +36,7 @@ print(dic)
 final_data = sorted(dic.items())
 x, y = zip(*final_data)
 plt.bar(x, y)
-plt.title('Frequency between ' + name_for_search + ' 2011 - 2016')
+plt.title('Frequency between 2011 - 2016\n Name: ' + name_for_search.upper())
 plt.ylabel('frequency')
 plt.xlabel('years')
 plt.show()
